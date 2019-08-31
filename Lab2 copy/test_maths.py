@@ -64,7 +64,7 @@ class MathsTest(unittest.TestCase):
 
         factorial_number = 5  #Arrange
 
-        factorial_value = factorial(factorial_number) #Act
+        factorial_value = maths.factorial(factorial_number) #Act
 
         self.assertEqual(factorial_value, 120) #Assert 
     

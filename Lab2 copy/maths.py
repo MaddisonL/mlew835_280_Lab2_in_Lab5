@@ -32,7 +32,10 @@ def fibonacci(length):
     return internal(0, 1, length)
 
 def factorial(factorial_value):
-    pass 
+    if factorial_value == 0:
+        return 1
+    else:
+        return factorial_value*factorial(factorial_value - 1)
 
 HEX_CHARS = {
     10: 'A',
