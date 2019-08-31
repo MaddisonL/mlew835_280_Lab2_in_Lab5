@@ -58,7 +58,15 @@ class MathsTest(unittest.TestCase):
         
         self.assertEqual(binary_convert, "1001") #Assert
         self.assertEqual(hex_convert, "16")
-        
+
+    def test_factorial(self):
+        ''' Tests the factorial function.'''
+
+        factorial_number = 5  #Arrange
+
+        factorial_value = factorial(factorial_number) #Act
+
+        self.assertEqual(factorial_value, 120) #Assert 
     
 
 # This allows running the unit tests from the command line (python test_maths.py)
